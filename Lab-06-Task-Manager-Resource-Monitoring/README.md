@@ -9,7 +9,9 @@ Used Windows Task Manager to diagnose and resolve performance issues on a live m
 
 ## How to Open
 Ctrl + Shift + Esc
+
 Ctrl + Alt + Delete → Task Manager
+
 Right click Taskbar → Task Manager
 
 ## Key Tabs
