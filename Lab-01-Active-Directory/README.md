@@ -31,11 +31,11 @@ Built a fully functional Active Directory domain from scratch on Windows Server 
 ### Active Directory Structure
 - Created Organizational Units: IT, HR, Production
 - Created user accounts in each OU:
-  - jsmith — IT Department
-  - sjones — HR Department
-  - mdavis — Production Department
+  - mgomez — IT Department
+  - ssaltman — HR Department
+  - ksnow — Production Department
 - Created security group: IT-Admins
-- Added jsmith to IT-Admins group
+- Added mgomez to IT-Admins group
 
 ### User Management Tasks Performed
 - Reset user password with force change on next logon
