@@ -9,15 +9,11 @@ Practiced the full browser troubleshooting workflow using Google Chrome on Windo
 - **Tools Used:** Chrome Settings, Chrome Extensions, Command Prompt
 
 ## How to Open Key Tools
-Clear Cache: Ctrl + Shift + Delete
-
-Extensions: chrome://extensions
-
-Update Check: chrome://settings/help
-
-Reset Chrome: chrome://settings/reset
-
-Incognito Mode: Ctrl + Shift + N
+- Clear Cache: Ctrl + Shift + Delete
+- Extensions: chrome://extensions
+- Update Check: chrome://settings/help
+- Reset Chrome: chrome://settings/reset
+- Incognito Mode: Ctrl + Shift + N
 
 ## Troubleshooting Order
 
