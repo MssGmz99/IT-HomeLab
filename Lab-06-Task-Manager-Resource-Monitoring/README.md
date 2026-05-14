@@ -8,10 +8,8 @@ Used Windows Task Manager to diagnose and resolve performance issues on a live m
 - **Tools Used:** Task Manager (Ctrl + Shift + Esc)
 
 ## How to Open
-Ctrl + Shift + Esc
-
-Ctrl + Alt + Delete → Task Manager
-
+Ctrl + Shift + Esc OR 
+Ctrl + Alt + Delete → Task Manager OR 
 Right click Taskbar → Task Manager
 
 ## Key Tabs
