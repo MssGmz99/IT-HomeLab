@@ -1,6 +1,6 @@
 # IT Home Lab
 
-A collection of hands-on IT labs documenting real-world T1 helpdesk tasks and system administration work. All labs were performed on live systems — no simulations.
+A collection of hands-on IT labs documenting real-world T1 helpdesk tasks and system administration work. All labs were performed on live systems.
 
 ## Lab Environment
 - **Host Machine:** Dell Inspiron 14 7420 2-in-1, Windows 11 Home
