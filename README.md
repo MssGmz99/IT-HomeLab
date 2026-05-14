@@ -13,12 +13,12 @@ A collection of hands-on IT labs documenting real-world T1 helpdesk tasks and sy
 | Lab | Topic | Platform |
 |---|---|---|
 | Lab 01 | Active Directory — Domain Controller Build | Windows Server 2012 R2 VM |
-| Lab 02 | User Account Management | Windows 11 Host |
-| Lab 03 | Network Connectivity Troubleshooting | Windows 11 Host |
+| Lab 02 | Network Connectivity Troubleshooting | Windows 11 Host |
+| Lab 03 | User Account Management | Windows 11 Host |
 | Lab 04 | Windows Event Viewer | Windows 11 Host |
-| Lab 05 | Task Manager & Resource Monitoring | Windows 11 Host |
-| Lab 06 | Disk Management & Storage | Windows 11 Host |
-| Lab 07 | Printer Troubleshooting | Windows 11 Host |
+| Lab 05 | Printer Troubleshooting | Windows 11 Host |
+| Lab 06 | Task Manager & Resource Monitoring | Windows 11 Host |
+| Lab 07 | Disk Management & Storage | Windows 11 Host |
 | Lab 08 | Ticketing System Simulation | Written Documentation |
 | Lab 09 | Backup & Restore | Windows 11 Host |
 | Lab 10 | Windows Services Management | Windows 11 Host |
