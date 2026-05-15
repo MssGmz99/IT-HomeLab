@@ -78,10 +78,5 @@ Start Menu → type CMD → Run as Administrator
 - **Default Gateway** — your router, the exit point to the internet
 - **DNS cache** — stores recently visited domain records locally
 
-## Interview Answer
-When asked how to troubleshoot a user who cannot connect to the internet:
-
-"I start with ipconfig to confirm the machine has a valid IP address. If it shows 169.254.x.x I know DHCP failed and I do a release and renew. If the IP looks good I ping the router at 192.168.1.1 to test local connectivity then ping 8.8.8.8 to test internet connectivity. If ping works but websites won't load I run nslookup to check DNS resolution and flush the DNS cache. If I need to find where traffic is dropping I run tracert to trace the full network path."
-
 ## Screenshots
 See screenshots folder for documented evidence of each task.
