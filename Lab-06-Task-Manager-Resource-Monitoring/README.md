@@ -1,16 +1,17 @@
 # Lab 06 — Task Manager & Resource Monitoring
 
 ## Overview
-Used Windows Task Manager to diagnose and resolve performance issues on a live machine. Task Manager is the first tool a T1 tech opens when a user reports their computer is slow or a program is frozen.
+Used Windows Task Manager to diagnose and resolve performance issues on a live Windows 11 machine. Task Manager is the first tool a T1 tech opens when a user reports their computer is slow or a program is frozen.
 
 ## Environment
 - **Platform:** Windows 11 Home (Host Machine)
+- **Device:** Dell Inspiron 14 7420 2-in-1
 - **Tools Used:** Task Manager (Ctrl + Shift + Esc)
 
 ## How to Open
-(Ctrl + Shift + Esc) OR 
-(Ctrl + Alt + Delete → Task Manager) OR 
-(Right click Taskbar → Task Manager)
+- Ctrl + Shift + Esc — fastest method
+- Ctrl + Alt + Delete → Task Manager
+- Right click Taskbar → Task Manager
 
 ## Key Tabs
 
@@ -22,37 +23,49 @@ Used Windows Task Manager to diagnose and resolve performance issues on a live m
 
 ## Tasks Performed
 
-### Process Analysis
+### Task 1 — Processes Tab — Sort by Memory
 - Opened Task Manager and navigated to Processes tab
-- Sorted processes by Memory and CPU to identify top resource consumers
-- Identified Claude browser tabs consuming 385MB as top memory user
-- Identified Antimalware Service Executable at 138MB as normal background process
-- Identified OVRServer (Oculus VR) running unnecessarily in background
+- Clicked Memory column to sort highest to lowest
+- Identified top memory consumers on the machine
+- Claude browser tabs identified as top memory consumer
+- Antimalware Service Executable identified as normal background process
+- OVRServer (Oculus VR) identified running unnecessarily in background
 
-### Process Management
-- Attempted to end OVRServer process
-- Observed process automatically restarted — demonstrating parent service management
-- Learned that some processes require stopping the underlying service not just ending the process
+### Task 2 — Processes Tab — Sort by CPU
+- Clicked CPU column to sort by processor usage
+- Identified which processes were consuming the most CPU
+- Confirmed overall CPU usage was healthy
+- Noted that most background processes were at 0% CPU
 
-### Performance Monitoring
-- Navigated to Performance tab and read Memory graph
-- Identified machine running at 77% memory usage — 5.8GB of 8GB in use
-- Noted only 1.8GB available — machine running memory constrained
-- Identified RAM slots used: 2 of 2 — no room to add more RAM
-- Identified form factor: SODIMM — laptop RAM, important for ordering parts
+### Task 3 — Performance Tab — Memory
+- Navigated to Performance tab via graph icon in left sidebar
+- Clicked Memory to view RAM usage graph
+- Read key memory statistics:
+  - Total RAM: 8.0 GB
+  - In use: 5.8 GB (77%)
+  - Available: 1.8 GB
+  - Slots used: 2 of 2 — no room to add more RAM
+  - Form factor: SODIMM — laptop RAM
+- Identified machine running memory constrained at 77% usage
 
-### Startup Management
-- Navigated to Startup Apps tab
-- Reviewed all enabled startup items
-- Disabled ChatGPT from launching at startup
-- Reduced unnecessary startup load to improve boot time
+### Task 4 — Startup Apps Review
+- Navigated to Startup Apps tab via list icon in left sidebar
+- Reviewed all enabled and disabled startup items
+- Identified unnecessary programs launching at boot
+- Noted Last BIOS time for boot performance reference
+
+### Task 5 — Disabled a Startup Item
+- Selected non-essential startup application
+- Clicked Disable to prevent it from launching at boot
+- Confirmed status changed to Disabled
+- Simulated fixing a slow boot time complaint
 
 ## Key Concepts
 - Sort by Memory or CPU to quickly find resource consumers
-- Memory consistently above 85-90% means the machine needs more RAM or fewer background apps
+- Memory consistently above 85-90% means machine needs more RAM or fewer background apps
 - 8GB RAM with both slots filled means sticks must be replaced — no room to add more
 - SODIMM is the laptop RAM form factor — important when ordering replacement parts
-- Some processes restart automatically — managed by a parent service, fix the root cause
+- Some processes restart automatically when ended — managed by a parent service
 - Disabling unnecessary startup items improves boot time and frees RAM on launch
 - Last BIOS time shows how long before Windows starts loading
 
