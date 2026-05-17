@@ -1,10 +1,11 @@
 # Lab 13 — Browser Troubleshooting
 
 ## Overview
-Practiced the full browser troubleshooting workflow using Google Chrome on Windows 11. Browser issues are among the most frequent user complaints on any helpdesk. Knowing the right order to apply fixes makes a T1 tech fast and effective.
+Practiced the full browser troubleshooting workflow using Google Chrome on Windows 11. Browser issues are among the most frequent user complaints on any helpdesk. Knowing the right order to apply fixes makes a T1 tech fast and effective on the job.
 
 ## Environment
 - **Platform:** Windows 11 Home (Host Machine)
+- **Device:** Dell Inspiron 14 7420 2-in-1
 - **Browser:** Google Chrome
 - **Tools Used:** Chrome Settings, Chrome Extensions, Command Prompt
 
@@ -38,42 +39,49 @@ Practiced the full browser troubleshooting workflow using Google Chrome on Windo
 
 ## Tasks Performed
 
-### Cache and Cookies
+### Task 1 — Clear Cache and Cookies
 - Opened Clear browsing data via Ctrl + Shift + Delete
 - Set time range to All time
-- Cleared browsing history, cookies, and cached images and files
+- Selected Browsing history, Cookies and site data, Cached images and files
 - Confirmed data cleared successfully
+- Simulated fix for user reporting slow or broken website behavior
 
-### Extension Management
+### Task 2 — Extension Management
 - Navigated to chrome://extensions
 - Reviewed all installed extensions:
-  - Claude in Chrome — legitimate, kept enabled
-  - Google Docs Offline — legitimate, kept enabled
+  - Claude in Chrome — legitimate Anthropic extension, kept enabled
+  - Google Docs Offline — legitimate Google extension, kept enabled
   - McAfee WebAdvisor — legitimate security tool, kept enabled
 - Confirmed no suspicious or unknown extensions present
+- Learned extensions are a common cause of browser slowness and crashes
 
-### Browser Version Check
+### Task 3 — Chrome Version Check
 - Navigated to chrome://settings/help
 - Confirmed Chrome was fully up to date
-- Learned outdated browsers are a security risk
+- Verified no pending updates
+- Learned outdated browsers are a security risk and common cause of site compatibility issues
 
-### Incognito Mode Diagnostics
+### Task 4 — Incognito Mode Diagnostics
 - Opened Incognito window via Ctrl + Shift + N
 - Reviewed what Incognito does and does not do
-- Used Incognito as isolation tool to rule out extensions and cache
+- Confirmed Incognito disables all extensions automatically
+- Confirmed Incognito starts with no cached data
+- Used as isolation tool to rule out extensions and cache as cause of issue
 
-### Chrome Reset
+### Task 5 — Chrome Reset Page
 - Navigated to chrome://settings/reset
-- Reviewed what reset clears — extensions, cookies, custom settings
+- Reviewed Restore settings to original defaults option
+- Confirmed reset clears extensions, cookies, and custom settings
 - Confirmed reset keeps bookmarks and saved passwords
 - Learned to always inform user what will be affected before running reset
 
 ## Key Concepts
-- Cache stores old versions of websites locally — clearing forces a fresh load
-- Incognito disables all extensions and starts with no cache — essential for isolation testing
-- Chrome reset keeps bookmarks and saved passwords — always tell the user this before running
-- Always keep the browser up to date — outdated browsers are a security risk
-- Extensions are a common cause of browser slowness and unexpected behavior
+- **Cache** stores old versions of websites locally — clearing forces a fresh load
+- **Incognito** disables all extensions and starts with no cache — essential for isolation testing
+- **Chrome reset** keeps bookmarks and saved passwords — always tell user before running
+- **Always keep browser up to date** — outdated browsers are a security risk
+- **Extensions** are a common cause of browser slowness and unexpected behavior
+- **Try different browser** to isolate whether issue is Chrome-specific or system-wide
 
 ## Screenshots
 See screenshots folder for documented evidence of each task.
